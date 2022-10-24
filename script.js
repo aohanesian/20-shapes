@@ -9,7 +9,8 @@ form.addEventListener(`submit`, evt => {
         accumulator[item.id] = item.value;
         return accumulator;
     }, {})
+    const {shape, myColor} = data
     element.removeAttribute('class');
-    element.classList.add(data.shape);
-    element.style.backgroundColor = data.myColor;
+    element.classList.add(shape);
+    element.style.backgroundColor = myColor;
 });
